@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FromE2U.InventoryController">
+   <children>
+      <ListView fx:id="listInventory" layoutX="107.0" layoutY="100.0" prefHeight="200.0" prefWidth="987.0" />
+      <TextField fx:id="inputName" layoutX="107.0" layoutY="384.0" />
+      <TextField fx:id="inputDesc" layoutX="107.0" layoutY="431.0" />
+      <TextField fx:id="inputPId" layoutX="107.0" layoutY="476.0" />
+      <TextField fx:id="inputPrice" layoutX="294.0" layoutY="384.0" />
+      <TextField fx:id="inputInvoice" layoutX="294.0" layoutY="431.0" />
+      <TextField fx:id="inputQuantity" layoutX="294.0" layoutY="476.0" />
+      <Button layoutX="107.0" layoutY="512.0" mnemonicParsing="false" onMouseClicked="#addItem" prefHeight="25.0" prefWidth="88.0" text="Add Product" />
+      <Button layoutX="993.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#updateItem" text="Update Product" />
+      <Text layoutX="107.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name" />
+      <Text layoutX="107.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID" />
+      <Text layoutX="297.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Quantity" />
+      <Text layoutX="294.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Price" />
+      <Text layoutX="294.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Invoice" />
+      <Text layoutX="107.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Description" />
+      <Button layoutX="552.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#loadItem" text="Load Inventory" />
+      <Button layoutX="1123.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToAnalytics" text="Analytics" />
+      <Label layoutX="553.0" layoutY="58.0" text="Inventory">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="upName" layoutX="758.0" layoutY="381.0" />
+      <TextField fx:id="upDesc" layoutX="758.0" layoutY="428.0" />
+      <TextField fx:id="upPId" layoutX="758.0" layoutY="473.0" />
+      <TextField fx:id="upPrice" layoutX="945.0" layoutY="381.0" />
+      <TextField fx:id="upInvoice" layoutX="945.0" layoutY="428.0" />
+      <TextField fx:id="upQuantity" layoutX="945.0" layoutY="473.0" />
+      <Text layoutX="758.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Name" />
+      <Text layoutX="758.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current ID" />
+      <Text layoutX="948.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Quantity" />
+      <Text layoutX="945.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Price" />
+      <Text layoutX="945.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Invoice" />
+      <Text layoutX="758.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Description" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSignIn" text="LogOut" />
+   </children>
+</AnchorPane>

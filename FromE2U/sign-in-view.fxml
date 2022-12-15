@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="230.0" prefWidth="317.0" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FromE2U.SignInController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="FromE2U">
+      <font>
+         <Font name="Arial Bold" size="14.0" />
+      </font>
+      <padding>
+         <Insets bottom="10.0" />
+      </padding></Label>
+   <Label fx:id="welcomeText" prefHeight="15.0" prefWidth="276.0" textFill="RED">
+      <font>
+         <Font name="System Italic" size="10.0" />
+      </font>
+   </Label>
+   <TextField fx:id="usernameField" promptText="Username">
+      <effect>
+         <Blend />
+      </effect>
+   </TextField>
+   <PasswordField fx:id="passwordField" promptText="Password" />
+    <Button onAction="#onSignInButtonClick" text="Sign In">
+      <VBox.margin>
+         <Insets top="10.0" />
+      </VBox.margin></Button>
+   <Label text="Or">
+      <padding>
+         <Insets bottom="-10.0" top="-10.0" />
+      </padding>
+   </Label>
+   <Button mnemonicParsing="false" onAction="#onSwitchToSignUpButtonClick" text="Switch to Sign Up">
+      <VBox.margin>
+         <Insets bottom="10.0" />
+      </VBox.margin>
+   </Button>
+</VBox>
